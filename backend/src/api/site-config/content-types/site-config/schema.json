@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_configs",
+  "info": {
+    "singularName": "site_config",
+    "pluralName": "site_configs",
+    "displayName": "Site Config"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true,
+      "default": "PRO MARKET"
+    },
+    "contactEmail": {
+      "type": "email",
+      "required": true,
+      "default": "info@promarket.ru"
+    },
+    "contactPhone": {
+      "type": "string",
+      "default": "+7 (900) 123-45-67"
+    },
+    "address": {
+      "type": "text"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    }
+  }
+}

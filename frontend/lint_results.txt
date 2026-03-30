@@ -1,0 +1,153 @@
+
+> frontend@0.1.0 lint
+> eslint
+
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\admin\banners\page.tsx
+   28:33   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  198:116  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\admin\catalog\page.tsx
+  40:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  48:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\admin\chat\page.tsx
+  300:10  warning  'RotateCw' is defined but never used      @typescript-eslint/no-unused-vars
+  300:26  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\admin\faq\page.tsx
+  170:116  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\admin\layout.tsx
+  20:58  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  68:14  warning  'err' is defined but never used           @typescript-eslint/no-unused-vars
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\admin\orders\page.tsx
+   28:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   62:32  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  313:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\admin\page.tsx
+    7:3   warning  'ArrowUpRight' is defined but never used    @typescript-eslint/no-unused-vars
+    8:3   warning  'ArrowDownRight' is defined but never used  @typescript-eslint/no-unused-vars
+   19:45  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+   19:60  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+   49:41  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+  110:32  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+  152:67  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\admin\portfolio\page.tsx
+  29:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\admin\settings\page.tsx
+  11:3   warning  'Check' is defined but never used             @typescript-eslint/no-unused-vars
+  17:44  error    Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  25:10  warning  'loading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\api\order\route.ts
+   31:67  warning  'html' is defined but never used          @typescript-eslint/no-unused-vars
+   48:40  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  112:19  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\catalog\page.tsx
+  35:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\chat\page.tsx
+  42:39  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+  63:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\chat\page.tsx:63:5
+  61 |       localStorage.setItem('chat_session_id', sId);
+  62 |     }
+> 63 |     setSessionId(sId);
+     |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  64 |
+  65 |     // Initial load
+  66 |     loadHistory(sId);  react-hooks/set-state-in-effect
+  72:40  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\faq\page.tsx
+  13:27  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  24:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  25:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\page.tsx
+  25:33  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-explicit-any
+  37:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\page.tsx:37:5
+  35 |
+  36 |   useEffect(() => {
+> 37 |     fetchBanners();
+     |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  38 |   }, [fetchBanners]);
+  39 |
+  40 |   return (  react-hooks/set-state-in-effect
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\portfolio\page.tsx
+  14:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  33:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\product\[slug]\page.tsx
+  3:21  warning  'CheckCircle2' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\quiz\page.tsx
+   8:46  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  18:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\app\sitemap.ts
+  20:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\components\Navbar.tsx
+  13:9  warning  'itemCount' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\components\YandexMetrica.tsx
+  29:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\components\admin\ProductModal.tsx
+   9:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  15:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\context\useAuth.ts
+  13:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  21:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\hooks\useChat.ts
+  19:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\hooks\useChat.ts:19:5
+  17 |       localStorage.setItem('chat_session_id', sId);
+  18 |     }
+> 19 |     setSessionId(sId);
+     |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  20 |
+  21 |     const socket = io(STRAPI_URL);
+  22 |     socketRef.current = socket;  react-hooks/set-state-in-effect
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\lib\excel.ts
+   4:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  11:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\PC\OneDrive\Desktop\loyiha\frontend\src\types\index.ts
+  60:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+тЬЦ 51 problems (41 errors, 10 warnings)
+

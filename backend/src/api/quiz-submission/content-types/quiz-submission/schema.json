@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quiz_submissions",
+  "info": {
+    "singularName": "quiz_submission",
+    "pluralName": "quiz_submissions",
+    "displayName": "Quiz Submission",
+    "description": "Store quiz submissions from visitors"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "visitorName": {
+      "type": "string"
+    },
+    "visitorPhone": {
+      "type": "string"
+    },
+    "answers": {
+      "type": "json",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["new", "processed"],
+      "default": "new"
+    }
+  }
+}

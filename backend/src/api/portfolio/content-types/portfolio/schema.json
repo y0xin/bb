@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "singularName": "portfolio",
+    "pluralName": "portfolios",
+    "displayName": "Portfolio",
+    "description": "Showcase of completed projects"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+       "type": "media",
+       "multiple": false,
+       "required": true,
+       "allowedTypes": ["images"]
+    },
+    "tag": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

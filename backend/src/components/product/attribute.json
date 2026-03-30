@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_attributes",
+  "info": {
+    "displayName": "Attribute",
+    "icon": "list-ul",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

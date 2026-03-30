@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chat_messages",
+  "info": {
+    "singularName": "chat_message",
+    "pluralName": "chat_messages",
+    "displayName": "Chat Message"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "text": { "type": "text", "required": true },
+    "sender": {
+      "type": "enumeration",
+      "enum": ["user", "admin"],
+      "required": true
+    },
+    "messageType": {
+      "type": "enumeration",
+      "enum": ["text", "image", "product"],
+      "default": "text"
+    },
+    "sessionId": { "type": "string", "required": true },
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "isRead": { "type": "boolean", "default": false }
+  }
+}
