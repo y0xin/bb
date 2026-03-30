@@ -1,6 +1,8 @@
 import CatalogClient from '@/components/catalog/CatalogClient';
 import { Product, Category } from '@/types';
 
+export const dynamic = 'force-dynamic';
+
 const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
 
 async function getCatalogData() {

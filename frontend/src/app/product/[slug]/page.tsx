@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import ProductActions from '@/components/ProductActions';
 import Navbar from '@/components/Navbar';
 import { ArrowLeft, ShieldCheck, Truck, RefreshCcw } from 'lucide-react';

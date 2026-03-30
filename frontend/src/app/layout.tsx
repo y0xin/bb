@@ -9,6 +9,11 @@ const inter = Inter({
   subsets: ["latin", "cyrillic"],
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: {
     default: "PRO MARKET — Премиальный Маркетплейс",
@@ -18,7 +23,6 @@ export const metadata: Metadata = {
     "Современный онлайн-каталог электроники и аксессуаров. Тысячи товаров, быстрая доставка и безопасная оплата.",
   keywords: ["онлайн-магазин", "каталог", "электроника", "смартфоны", "PRO MARKET"],
   authors: [{ name: "PRO MARKET Team" }],
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
     title: "PRO MARKET — Премиальный Маркетплейс",
