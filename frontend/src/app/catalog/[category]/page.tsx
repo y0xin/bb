@@ -26,8 +26,9 @@ async function getCategoryData(categorySlug: string) {
   return { products, categories, categoryName };
 }
 
-export default async function CategoryPage({ params }: { params: { category: string } }) {
-  const { products, categories, categoryName } = await getCategoryData(params.category);
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category } = await params;
+  const { products, categories, categoryName } = await getCategoryData(category);
 
   return (
     <CatalogClient 

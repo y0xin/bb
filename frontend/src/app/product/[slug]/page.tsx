@@ -23,9 +23,10 @@ export async function generateStaticParams() {
   }
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
   try {
-    const res = await fetch(`${STRAPI_URL}/api/products?filters[slug][$eq]=${params.slug}`);
+    const res = await fetch(`${STRAPI_URL}/api/products?filters[slug][$eq]=${slug}`);
     const { data } = await res.json();
     if (!data || data.length === 0) return { title: 'Product Not Found' };
     const p = data[0];
@@ -43,11 +44,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
-export default async function ProductDetailPage({ params }: { params: { slug: string } }) {
+export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   let product: Product | null = null;
 
   try {
-    const res = await fetch(`${STRAPI_URL}/api/products?filters[slug][$eq]=${params.slug}&populate=*`, { next: { revalidate: 3600 } });
+    const res = await fetch(`${STRAPI_URL}/api/products?filters[slug][$eq]=${slug}&populate=*`, { next: { revalidate: 3600 } });
     const { data } = await res.json();
     
     if (!data || data.length === 0) return notFound();
